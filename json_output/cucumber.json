@@ -1,0 +1,132 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: sachin Kulkarni"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary : Given, When, And, Then"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Login with corrrect user name and password and Compose email with attachment to send an email",
+        "description": "",
+        "id": "gmail-login-and-attachment-feature-test;login-with-corrrect-user-name-and-password-and-compose-email-with-attachment-to-send-an-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12243910900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Valid user logs in to Gmail with username and password",
+            "match": {
+              "location": "GmailAttachment.valid_user_logs_in_to_Gmail_with_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13853797400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User logged in using user name and password navigates to gmail inbox",
+            "match": {
+              "location": "GmailAttachment.user_logged_in_using_user_name_and_password_navigates_to_gmail_inbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 916088300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User need to click on compose email button",
+            "match": {
+              "location": "GmailAttachment.user_need_to_click_on_compose_email_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7426708000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User need to add text in subject and body of email",
+            "match": {
+              "location": "GmailAttachment.user_need_to_add_text_in_subject_and_body_of_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11712698300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User need to click on add attachment",
+            "match": {
+              "location": "GmailAttachment.user_need_to_click_on_add_attachment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7694509400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User need to add email reciepient",
+            "match": {
+              "location": "GmailAttachment.user_need_to_add_email_reciepient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199066500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on send button",
+            "match": {
+              "location": "GmailAttachment.user_click_on_send_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Gmail Login and attachment feature test",
+    "description": "",
+    "id": "gmail-login-and-attachment-feature-test",
+    "keyword": "Feature",
+    "uri": "C:/Users/Sachin/eclipse-workspace/Gmail_Attachment_1.0/src/main/java/Features/login.feature",
+    "tags": [
+      {
+        "line": 4,
+        "name": "@tag"
+      }
+    ]
+  }
+]
