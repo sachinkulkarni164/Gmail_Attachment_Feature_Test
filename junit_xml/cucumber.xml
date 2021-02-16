@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="54.046779">
-    <testcase classname="Gmail Login and attachment feature test" name="Login with corrrect user name and password and Compose email with attachment to send an email" time="54.046779">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="81.266043">
+    <testcase classname="Gmail Login and attachment feature test" name="Login with corrrect user name and password and Compose email with attachment to send an email" time="81.266043">
         <system-out><![CDATA[Given Valid user logs in to Gmail with username and password................passed
 When User logged in using user name and password navigates to gmail inbox...passed
 And User need to click on compose email button..............................passed

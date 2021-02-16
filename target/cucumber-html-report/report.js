@@ -79,49 +79,49 @@ formatter.match({
   "location": "GmailAttachment.valid_user_logs_in_to_Gmail_with_username_and_password()"
 });
 formatter.result({
-  "duration": 12243910900,
+  "duration": 29003273900,
   "status": "passed"
 });
 formatter.match({
   "location": "GmailAttachment.user_logged_in_using_user_name_and_password_navigates_to_gmail_inbox()"
 });
 formatter.result({
-  "duration": 13853797400,
+  "duration": 15646682000,
   "status": "passed"
 });
 formatter.match({
   "location": "GmailAttachment.user_need_to_click_on_compose_email_button()"
 });
 formatter.result({
-  "duration": 916088300,
+  "duration": 685597800,
   "status": "passed"
 });
 formatter.match({
   "location": "GmailAttachment.user_need_to_add_text_in_subject_and_body_of_email()"
 });
 formatter.result({
-  "duration": 7426708000,
+  "duration": 8553955300,
   "status": "passed"
 });
 formatter.match({
   "location": "GmailAttachment.user_need_to_click_on_add_attachment()"
 });
 formatter.result({
-  "duration": 11712698300,
+  "duration": 19667019800,
   "status": "passed"
 });
 formatter.match({
   "location": "GmailAttachment.user_need_to_add_email_reciepient()"
 });
 formatter.result({
-  "duration": 7694509400,
+  "duration": 7430268400,
   "status": "passed"
 });
 formatter.match({
   "location": "GmailAttachment.user_click_on_send_button()"
 });
 formatter.result({
-  "duration": 199066500,
+  "duration": 279245900,
   "status": "passed"
 });
 });

@@ -18,6 +18,12 @@ import cucumber.api.java.en.When;
 
 public class GmailAttachment {
 	static WebDriver driver;
+	String Email= "tselenium182@gmail.com";
+	String Password = "Computer*1993";
+	String Subject = "Sample text added in the subject";
+	String Body = "Hi, this is a sample body message";
+	String SendTo = "sachin.kulkarni164164@gmail.com";
+	String FilePath = "C:\\Users\\Sachin\\Desktop\\abc.txt";
 
 	@Given("^Valid user logs in to Gmail with username and password$")
 	public void valid_user_logs_in_to_Gmail_with_username_and_password() throws Throwable {
@@ -27,9 +33,9 @@ public class GmailAttachment {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://accounts.google.com");
-		driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("tselenium182@gmail.com");
+		driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys(Email);
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button")).click();
-		driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys("Computer*1993");
+		driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys(Password);
 		driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/div/button")).click();
 		Thread.sleep(2000);
 	}
@@ -46,9 +52,9 @@ public class GmailAttachment {
 
 	@And("^User need to add text in subject and body of email$")
 	public void user_need_to_add_text_in_subject_and_body_of_email() throws Throwable {
-		driver.findElement(By.xpath("//input[@name='subjectbox']")).sendKeys("Sample text added in the subject");
+		driver.findElement(By.xpath("//input[@name='subjectbox']")).sendKeys(Subject);
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//div[@aria-label='Message Body']")).sendKeys("Hi, this is a sample body message");
+		driver.findElement(By.xpath("//div[@aria-label='Message Body']")).sendKeys(Body);
 		Thread.sleep(3000);
 	}
 
@@ -56,8 +62,8 @@ public class GmailAttachment {
 	public void user_need_to_click_on_add_attachment() throws Throwable {
 		driver.findElement(By.xpath("//div[@class='aDh']/table/tbody/tr/td[4]/div/div[@data-tooltip='Attach files']"))
 				.click();
-		Thread.sleep(5000);
-		uploadFile("C:\\Users\\Sachin\\Desktop\\abc.txt");
+		Thread.sleep(6000);
+		uploadFile(FilePath);
 		Thread.sleep(6000);
 	}
 
@@ -65,7 +71,7 @@ public class GmailAttachment {
 	public void user_need_to_add_email_reciepient() throws Throwable {
 		driver.findElement(By.xpath("//form[@enctype='multipart/form-data']/div/div")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//textarea[@role='combobox']")).sendKeys("sachin.kulkarni164164@gmail.com");
+		driver.findElement(By.xpath("//textarea[@role='combobox']")).sendKeys(SendTo);
 		Thread.sleep(4000);
 	}
 
