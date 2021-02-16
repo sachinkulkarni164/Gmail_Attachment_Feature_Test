@@ -36,9 +36,7 @@ public class GmailAttachment {
 
 	@When("^User logged in using user name and password navigates to gmail inbox$")
 	public void user_logged_in_using_user_name_and_password_navigates_to_gmail_inbox() throws Throwable {
-		System.out.println("bef");
 		driver.navigate().to("https://mail.google.com/mail/u/0/#inbox");
-		System.out.println("aft");
 	}
 
 	@And("^User need to click on compose email button$")
