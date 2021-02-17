@@ -32,3 +32,4 @@ Feature: Gmail Login and attachment feature test
     2. import the project from eclipse
     3. Change the Chrome Driver directory where you have placed them
     4. Need some user name and password changes if the used gmail user name and password does not support.
+    5. After all setup run TestRunner.java as Junit Test
